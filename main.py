@@ -39,15 +39,15 @@ async def a(interaction, *, arg: str):
     await interaction.response.send_message("Agrippa: " + str(pygematria.conv.string_values(arg, 'agrippa')) + " = " + str(sum(pygematria.conv.string_values(arg, 'agrippa'))))
     msg = await interaction.original_response()
 
-@bot.tree.command(name="h", description="Hebrew cipher")
-async def h(interaction, *, arg: str):
-    await interaction.response.send_message("Hebrew: " + str(pygematria.conv.string_values(arg, 'hebrew')) + " = " + str(sum(pygematria.conv.string_values(arg, 'hebrew'))))
-    msg = await interaction.original_response()
+# @bot.tree.command(name="h", description="Hebrew cipher")
+# async def h(interaction, *, arg: str):
+#    await interaction.response.send_message("Hebrew: " + str(pygematria.conv.string_values(arg, 'hebrew')) + " = " + str(sum(pygematria.conv.string_values(arg, 'hebrew'))))
+#    msg = await interaction.original_response()
 
-@bot.tree.command(name="g", description="Greek isopsephy cipher")
-async def g(interaction, *, arg: str):
-    await interaction.response.send_message("Greek isopsephy:" + str(pygematria.conv.string_values(arg, 'greek')) + " = " + str(sum(pygematria.conv.string_values(arg, 'greek'))))
-    msg = await interaction.original_response()
+# @bot.tree.command(name="g", description="Greek isopsephy cipher")
+# async def g(interaction, *, arg: str):
+#    await interaction.response.send_message("Greek isopsephy:" + str(pygematria.conv.string_values(arg, 'greek')) + " = " + str(sum(pygematria.conv.string_values(arg, 'greek'))))
+#    msg = await interaction.original_response()
 
 @bot.tree.command(name="r", description="Rudolff cipher")
 async def r(interaction, *, arg: str):
