@@ -51,7 +51,7 @@ async def g(interaction, *, arg: str):
 
 @bot.tree.command(name="r", description="Rudolff cipher")
 async def r(interaction, *, arg: str):
-    await interaction.response.send_message("Rudolff: " + str(pygematria.conv.string_values(arg, 'rudolff')) + " = " + str(sum(pygematria.conv.string_values(arg, 'greek'))))
+    await interaction.response.send_message("Rudolff: " + str(pygematria.conv.string_values(arg, 'rudolff')) + " = " + str(sum(pygematria.conv.string_values(arg, 'rudolff'))))
     msg = await interaction.original_message()
 
 @bot.tree.command(name="fortune", description="s4s fortune")
